@@ -1,0 +1,73 @@
+/*----------------------------nav------------*/
+nav span{
+    display: none;
+}
+
+
+nav{
+    height: 95px;
+}
+
+nav ul{
+    font-size: 20px;
+}
+
+/*---------------------banner----------------*/
+
+.banner .ref{
+    height: 675px;
+}
+
+.banner .info{
+    font-size: 45px;
+}
+
+.banner .link,
+.banner .angle{
+    font-size: 25px;
+}
+
+/*---------------------text----------------*/
+
+.text{
+    height: 245px;
+}
+
+.text>.wrapper p{
+    font-size: 25px;
+}
+
+.text .link{
+    font-size: 40px;
+}
+
+/*---------------------imgs----------------*/
+
+.imgs>.link{
+    font-size: 30px;
+}
+
+.imgs>.img-wrap,
+.imgs>.link{
+    width: 33.333%;
+}
+
+/*---------------------main----------------*/
+
+main article{
+    float: left;
+    width: 45%;
+    font-size: 12px;
+}
+
+main article:nth-child(odd){
+    padding-left: 4%;
+}
+
+main article:nth-child(even){
+    padding-right: 4%;
+}
+
+main .link{
+    font-size: 24px;
+}
