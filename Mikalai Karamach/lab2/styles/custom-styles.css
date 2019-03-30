@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------------------<nav>---------------------------- */
+.menu{
+    background-color: #333336;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.container-item{
+    display: inline-flex;
+    padding: 30px;
+}
+.container-item:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+.hide-menu, .sub-menu{
+    display: none;
+}
+/*------------------------</nav>----------------------------------*/
+
+
+/* -----------------------<header>------------------------------- */
+.link{
+    display: flex;
+    flex-direction: column;
+    background-color: #0A9AB2;
+    color: white;
+}
+
+.link-item{
+    margin: 0;
+    width: 70%;
+    margin-left: 10%; 
+}
+
+.link-item:first-child{
+    margin-top: 10%;
+    font-size: 5vw;
+}
+
+.link-item:nth-child(2) {
+    margin-top: 4%;
+    margin-bottom: 10%;
+    font-size: 3vw;
+}
+
+.link-item:nth-child(2) span{
+    opacity: 0.7;
+    margin-right: 35%;
+}
+
+/* ----------------------</header>------------------------------- */
+
+/* -----------------------<pictures>--------------------- */
+
+.images{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.images-item{
+    display: flex;
+}
+
+/* ---------------------<pictures top>------------------------- */
+
+
+.images-item{
+    padding: 13% 0;
+}
+
+.images-item:first-child{
+    flex-basis: 80%;
+    background-color: #27212B;
+    color: #6D6476;
+    font-size: 3vw;
+}
+
+.images-item:last-child{
+    flex-basis: 20%;
+    background-color: #BC3184;
+    color: white;
+    font-size: 4vw;
+}
+
+/* ---------------------</picture-top>----------------------------- */
+
+
+/* ---------------------<pictures-bot>----------------------------- */
+
+.images-bot-item{
+    flex-basis: 33.3333%;
+}
+
+.images-bot-item:first-child{
+    padding: 14% 0;
+    font-size: 3vw;
+    color: white;
+    background-color: #5A0FA0;
+}
+
+/* -------------------------</picture-bot>---------------------------- */
+
+footer{
+    background-color: #EBEBEB;
+}
+
+.footer-text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 400px;
+}
+
+.footer-text-item{
+    width: 40%;
+    margin: 0 5% 5% 5%;
+    font-style: italic;
+    font-size: 1.3vw;
+}
+
+footer h5{
+    font-size: 1.5vw;
+    margin-left: 5%;
+}
+
+
+@media only screen and (max-width: 320px){
+
+}
+@media only screen and (max-width: 640px){
+    .menu li{
+        display: none;
+    }
+
+    .hide-menu{
+        background-color: #333336;
+        color: white;
+        display: flex;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+    }
+    .hide-item{
+        font-size: 3vw;
+        padding: 2%;
+        margin: auto 0;
+        list-style: none;
+    }
+
+    .hide-item:first-child{
+        font-size: 5vw;
+    }
+
+    .hide-item:last-child:hover{
+        background-color: gray;
+        cursor: pointer;
+    }
+
+    .hide-item:last-child:hover .sub-menu{
+        display: block;
+        transition-delay: 2s;
+    }
+
+    .sub-menu{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 60%;
+        margin-top: 2%;
+        width: 40%;
+        display: none;
+    }
+
+    .sub-menu-item{
+        display: block;
+        background-color: #33333F;
+        border-bottom: 1px solid gray;
+        padding: 5% 0;
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    .sub-menu-item:hover{
+        background-color: #33335F;
+        cursor: pointer;
+    }
+
+    .pictures-bot{
+        flex-direction: column;
+    }
+
+    .images-bot-item:first-child{
+        padding: 40% 0;
+    }
+
+    .footer-text{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    footer h5{
+        margin: 5px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .footer-text-item{
+        width: 80%;
+        font-size: 16px;
+    }
+
+
+}
+@media only screen and (max-width: 980px){
+    
+}
+@media only screen and (max-width: 1024px){
+
+
+}
