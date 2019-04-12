@@ -1,0 +1,35 @@
+.images {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+}
+
+.images .images-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5b0fa1;
+    color: white;
+    font-size: 12vw;
+    text-decoration: none;
+    transition: padding-left 0.3s ease-out 0s;
+}
+.images .images-link:hover {
+    padding-left: 20%;
+    transition: padding-left 0.3s ease-out 0s;
+}
+
+.images .image img {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (min-width: 641px) {
+    .images {
+        grid-auto-columns: 1fr;
+        grid-auto-flow: column;
+    }
+    .images .images-link {
+        font-size: 4vw;
+    }
+}

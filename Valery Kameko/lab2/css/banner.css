@@ -1,0 +1,57 @@
+.banner {
+    height: 55vw;
+    background: linear-gradient(45deg, #19b4c6, #078aa4)
+}
+.banner-content > h2 {
+    margin: 0;
+    font-size: 6vw;
+    color: white;
+}
+.banner {
+    position: relative;
+}
+.banner-content {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.banner-link {
+    margin-top: 5%;
+    position: relative;
+}
+.banner-link > a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.banner-link-name {
+    color: #b4d7df;
+    font-size: 3.7vw;
+}
+.banner-link-icon {
+    position: relative;
+    color: white;
+    font-size: 4vw;
+    transition: left 0.5s ease-out 0s;
+    left: 0;
+}
+.banner-link::before {
+    content: '';
+    width: 0;
+    position: absolute;
+    top: -50%;
+    left: -2%;
+    height: 200%;
+    background-color: #ffffff00;
+    transition: all 0.5s ease-in 0s;
+}
+.banner-link:hover:before {
+    width: 114%;
+    background-color: #ffffff44;
+    transition: all 0.5s ease-in 0s;
+}
+.banner-link:hover .banner-link-icon {
+    left: 10%;
+    transition: left 0.5s ease-out 0.3s;
+}

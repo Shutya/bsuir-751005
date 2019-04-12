@@ -1,0 +1,37 @@
+.description p:not(:nth-of-type(1)) {
+    display: none;
+}
+.description {
+    padding: 8%;
+    padding-top: 5%;
+    background-color: #ebebeb;
+    line-height: 7vw;
+    font-size: 4vw;
+}
+.description h2 {
+    color: #088ca5;
+    font-weight: normal;
+    font-size: 7vw;
+}
+
+@media screen and (min-width: 641px) {
+    .description p:not(:nth-of-type(1)) {
+        display: inherit;
+    }
+    .description {
+        font-size: 1.2em;
+        line-height: 2.2em;
+    }
+    .description h2 {
+        font-size: 30pt;
+    }
+    .article {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 50px;
+    }
+    .article p {
+        flex-grow: 1;
+    }
+    
+}
