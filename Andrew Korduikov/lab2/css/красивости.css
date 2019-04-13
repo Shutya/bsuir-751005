@@ -1,0 +1,303 @@
+@font-face {
+  font-family: LiberationSans;
+  src: url("liberation-sans_[allfont.ru].ttf");
+}
+
+@font-face {
+  font-family: quicksand-bold;
+  src: url("quicksand-bold_[allfont.ru].ttf");
+}
+
+
+
+body{
+  margin: 0;
+}
+
+.wrapper{
+  max-width: 100vw;
+  margin: auto;
+}
+
+nav{
+  background-color: rgb(55, 60, 63);
+  width: 100%;
+  height: 9.5vw;
+  margin: 0;
+}
+
+nav .navigation{
+  display: none;
+  height: inherit;
+  align-items: center;
+  padding-left: 3vw;
+  font-size: 4vw;
+  font-family: Montserrat;
+  color: white;
+}
+
+nav a{
+  align-self: center;
+  text-decoration: none;
+  color: rgb(115, 118, 120);
+}
+
+nav a:hover{
+  color: white;
+}
+
+nav ul{
+  display: flex;
+  margin: 0;
+  margin-left: 7vw;
+  padding: 0;
+  height: 100%;
+}
+
+nav li{
+  margin: 0;
+  margin-right: 3vw;
+  display: inline-flex;
+  text-align: center;
+  font-size: 1.7vw;
+  font-family: "Montserrat Regular";
+  height: 100%;
+}
+
+nav li .menuicon{
+  display: none;
+}
+
+.content{
+  width: 100%;
+}
+
+.content .banner1{
+  display: flex;
+  background: linear-gradient(to bottom right, rgb(25, 180, 198), rgb(7, 138, 164));
+  height: 56.5vw;
+}
+
+.content .banner1 .text{
+  margin-left: 10vw;
+  color: white;
+  font-size: 5.5vw;
+  font-family: "Montserrat Regular";
+  align-self: center;
+}
+
+.content .banner1 .text .link .link-text{
+  margin-top: 5vw;
+  color:  rgb(172, 215, 225);
+  font-size: 3vw;
+  display: inline-block;
+}
+
+.content .banner1 .text .link .arrow{
+  margin-left: 25vw;
+  color: white;
+  font-size: 3vw;
+  font-family: quicksand-bold;
+  display: inline-block;
+}
+
+.arrow a{
+  text-decoration: none;
+  color: white;
+}
+
+.content .banner2{
+  height: 24vw;
+  display: inline-flex;
+  width: inherit;
+}
+
+.content .banner2 .violet{
+  display: flex;
+  margin: 0;
+  background-color: rgb(39, 33, 44);
+  height: inherit;
+  width: 75%;
+  justify-content: center;
+}
+
+.content .banner2 .pink{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background-color: rgb(188, 49, 131);
+  height: inherit;
+  width: 25%;
+}
+
+.content .banner2 .violet .text{
+  align-self: center;
+  font-size: 3vw;
+  font-family: "Montserrat Regular";
+  color: rgb(146, 130, 160);
+}
+
+.content .banner2 .pink .arrow{
+  font-size: 5.5vw;
+  font-family: quicksand-bold;
+  color: white;
+  align-self: center;
+}
+
+.content .banner3{
+  width: 100%;
+  height: 30vw;
+  display: inline-flex;
+}
+
+.content .banner3 .part1{
+  display: flex;
+  height: inherit;
+  width: 33vw;
+  background-color: rgb(91, 15, 161);
+  justify-content: center;
+}
+
+.content .banner3 .part1 .arrow{
+  font-size: 5vw;
+  font-family: quicksand-bold;
+  color: white;
+  align-self: center;
+}
+
+.content .banner3 .part2{
+  background-image: url(img/2.png);
+  background-repeat:no-repeat;
+  background-size: 100%;
+  width: 33vw;
+}
+
+.content .banner3 .part3{
+  background-image: url(img/3.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 33vw;
+}
+
+.content .banner4{
+  background-color: rgb(235, 235,235);
+  height: 55vw;
+}
+
+.content .banner4 .link{
+  padding-top: 7vw;
+  margin-left: 4.5vw;
+  font-size: 2.8vw;
+  font-family: "Montserrat Regular";
+  color: rgb(8, 140, 165);
+  margin-bottom: 3vw;
+}
+
+.content .banner4 .text{
+  display: flex;
+  justify-content: space-around;
+}
+
+.content .banner4 .text .text1, .text2{
+  width: 40vw;
+  font-size: 1.4vw;
+  font-family: Montserrat;
+  color: rgb(81, 81, 81);
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 640px){
+
+   nav{
+    height: 12vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav .navigation{
+    display: flex;
+    height: inherit;
+  }
+
+  nav .menuicon a:hover{
+    cursor: pointer;
+  }
+
+  nav .menuicon a{
+    height: 100%;
+    width: 100%;
+  }
+
+  nav ul{
+    display: none;
+  }
+
+  nav .menuicon a:hover ul{
+    position: absolute;
+    display: flex;
+    margin: 0;
+    margin-left: 4.5vw;
+    padding: 0;
+    height: 100%;
+  }
+
+  nav .menuicon{
+    align-items: center;
+    display: inline-flex;
+    background-image: url(img/menuicon1.png);
+    width: 13vw;
+    background-size: 100%;
+  }
+
+  .content .banner1 .text .link .link-text{
+    font-size: 3.2vw;
+  }
+
+  .content .banner1 .text .link .arrow{
+    margin-left: 23vw;
+  }
+
+  .content .banner2 .violet .text{
+    font-size: 2.7vw;
+  }
+
+  .content .banner3{
+    display: table-row;
+  }
+
+  .content .banner3 .part1{
+    width: 100vw;
+    height: 85vw;
+  }
+
+  .content .banner3 .part2, .part3{
+    width: 100vw;
+    height: 85vw;
+    background-size: 100%;
+  }
+
+  .content .banner3 .part3{
+    width: 100vw;
+    height: 85vw;
+    background-size: 100%;
+  }
+
+  .content .banner4{
+    height: 150vw;
+  }
+
+  .content .banner4 .link{
+    font-size: 5vw;
+    margin-left: 8vw;
+  }
+
+  .content .banner4 .text .text1{
+    font-size: 3.5vw;
+    width: 80vw;
+  }
+
+  .content .banner4 .text .text2{
+    display: none;
+  }
+
+}
