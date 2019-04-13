@@ -1,0 +1,38 @@
+.links {
+    height: 23vw;
+    position: relative;
+}
+.links a {
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+}
+.links .link-name {
+    flex-grow: 1;
+    background-color: #27212c;
+    color: #9282a0;
+    display: flex;
+    justify-content: center;
+}
+.link-name h2 {
+    display: block;
+    font-size: 3vw;
+    align-self: center;
+}
+.links .link-arrow {
+    width: 22vw;
+    background-color: #bc3183;
+    font-size: 4vw;
+    color: white;
+    position: relative;
+    transition: all ease-in-out 0.5s;
+}
+.links .link-arrow-icon {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.links:hover .link-arrow {
+    padding-left: 10%;
+}

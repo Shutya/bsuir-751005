@@ -1,0 +1,169 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.header {
+    color: #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    height: 11.75vw;
+    background-color: #373c3f;
+}
+.header h1 {
+    margin: 0;
+    font-size: 3.5vw;
+}
+.header .menu-header {
+    padding-left: 5.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .menu-button {
+    border: none;
+    position: relative;
+    width: 11.75vw;
+    background-color: #202529;
+    color: white;
+}
+.header .menu-button:focus {
+    background-color: lightgray;
+}
+.header .menu-button::-moz-focus-inner { 
+    border: 0; 
+}
+.header .menu-button:focus ~ .menu {
+    display: initial;
+}
+.header .menu-button i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+    font-size: 3.75vw;
+}
+.header .menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 11.75vw;
+    background-color: #373c3f;
+    z-index: 2;
+}
+.header .menu a {
+    font-size: 3vw;
+    width: 100%;
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+}
+.header .menu a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+}
+.header .menu a:hover {
+    padding-left: 30px;
+    padding-right: 10px;
+    transition: all ease-out 0.5s;
+}
+.header .menu a:hover:before {
+    width: 100%;
+    background-color: #ffffff88;
+    transition: all ease-out 0.5s;
+}
+.header .menu ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.header .menu .menu-item {
+    display: table;
+    align-self: stretch;
+    width: 100%;
+}
+
+@media screen and (min-width: 641px) {
+    .header {
+        max-height: 100px;
+    }
+
+    .header .menu-button,
+    .header .menu-header {
+        display: none;
+    }
+    .header .menu-button:focus {
+        pointer-events: none;
+    }
+    .header .menu {
+        display: initial;
+        position: initial;
+        background-color: #373c3f;
+    }
+    .header .menu .menu-item:first-child a {
+        padding-left: 60px;
+    }
+    .header .menu a {
+        font-size: 15pt;
+        height: 100%;
+        text-transform: uppercase;
+        display: table-cell;
+        vertical-align: middle;
+        text-decoration: none;
+        position: relative;
+        padding: 0 20px;
+        color: white;
+        padding-bottom: 0%;
+        transition: all ease-out 0.5s;
+    }
+    .header .menu a:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        height: 0%;
+        background-color: #ffffff00;
+        transition: all ease-out 0.5s;
+    }
+    .header .menu a:hover {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        transition: all ease-out 0.5s;
+    }
+    .header .menu a:hover:before {
+        height: 100%;
+        top: 0;
+        width: 100%;
+        background-color: #ffffff88;
+        transition: all ease-out 0.5s;
+    }
+    .header .menu ul {
+        height: 100%;
+        width: initial;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    .header .menu .menu-item {
+        display: table;
+        align-self: stretch;
+        height: 100%;
+        width: initial;
+    }    
+}
