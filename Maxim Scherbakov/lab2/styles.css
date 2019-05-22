@@ -1,0 +1,366 @@
+/* COMMON STYLES
+========================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Tahoma, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: slategray;
+}
+
+.link-arrow a{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+
+/* HEADER STYLES
+============================== */
+
+header {
+    background-color: #373C3F;
+}
+
+.main-menu {
+    height: 75px;
+    line-height: 75px;
+}
+
+.main-menu .caption,
+.main-menu .expand-nav {
+    display: none;
+}
+
+.main-menu .caption {
+    padding-left: 40px;
+    color: white;
+    font-size: 25px;
+}
+
+.main-menu .expand-nav {
+    border: none;
+    background-color: #202529;
+    text-align: center;
+    color: white;
+    width: 75px;
+    height: 75px;
+}
+
+.main-menu ul {
+    margin-left: 20px;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+.main-menu ul li a {
+    color: white;
+}
+
+.main-menu ul li.active a {
+    font-weight: bold;
+}
+
+.slider {
+    width: 100%;
+    height: 500px;
+}
+
+.slider .slide {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #19B4C6, #078AA4);
+    padding: 10% 5%;
+    box-sizing: border-box;
+}
+
+.slider .slide .container {
+   width: 80%;
+   display: flex;
+   justify-content: space-between;
+   box-sizing: border-box;
+   padding-bottom: 5%;
+}
+
+.slider .slide h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.slider .slide .description {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    opacity: .5;
+}
+
+.slider .slide .link-arrow a {
+    font-size: 27px;
+}
+
+
+
+/* MAIN STYLES
+============================= */
+
+body {
+    background-color: #EBEBEB;
+}
+
+.swift-article {
+    width: 100%;
+    background-color: #27212C;
+    display: flex;
+    height: 200px;
+}
+
+.swift-article > .description {
+    padding: 0 20px;
+    color: #9282A0;
+    line-height: 200px;
+    font-weight: bold;
+    font-size: 20px;
+    flex-grow: 1;
+    padding-left: 7%;
+}
+
+.swift-article > .link-arrow {
+    width: 200px;
+    height: 200px;
+    background-color: #BC3183;
+    line-height: 200px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    align-items: stretch;
+}
+
+.gallery .gal-item {
+    background-color: #5B0FA1;
+    width: 33.3%;
+    object-fit: cover;
+    display: flex;
+}
+
+.gallery .gal-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .gal-item .link-arrow {
+    display: block;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.content {
+    margin: 20px;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article h2 {
+    width: 100%;
+    box-sizing: border-box;
+    color: #088CA5;
+    padding-left: 40px;
+}
+
+.article .content-block {
+    flex-grow: 1;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px 40px;
+}
+
+.article .content-block p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: gray;
+    line-height: 30px;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 979.9px)
+{
+
+    .link-arrow a {
+        font-size: 30px;
+    }
+
+
+    .main-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-menu .caption,
+    .main-menu .expand-nav {
+        display: block;
+    }
+
+    .main-menu .expand-nav {
+        font-size: 23px;
+    }
+
+    .main-menu .menu-list {
+        display: none;
+    }
+
+    .slider {
+        height: 400px;
+    }
+
+    .slider .slide h1 {
+        font-size: 40px;
+    }
+
+    .slider .slide .link-arrow a {
+        font-size: 25px;
+    }
+
+    .swift-article {
+        height: 150px;
+    }
+
+    .swift-article > .description {
+        line-height: 150px;
+    }
+
+    .swift-article > .link-arrow {
+        line-height: 150px;
+        width: 150px;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery .gal-item {
+        width: 100%;
+    }
+
+    .gallery .gal-item .link-arrow {
+        height: 500px;
+        line-height: 500px;
+    }
+
+    .gallery .gal-item .link-arrow a {
+        font-size: 50px;
+    }
+
+    .article {
+        flex-direction: column;
+    }
+
+    .article .content-block {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 639.9px)
+{
+
+    .link-arrow a {
+        font-size: 15px;
+    }
+
+    .main-menu {
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .main-menu .caption {
+        font-size: 13px;
+        padding-left: 20px;
+    }
+
+    .main-menu .expand-nav {
+        height: 35px;
+        width: 35px;
+        font-size: 13px;
+    }
+
+    .slider {
+        height: 170px;
+    }
+
+    .slider .slide h1 {
+        font-size: 20px;
+    }
+
+    .slider .slide .description {
+        font-size: 10px;
+    }
+
+    .slider .slide .link-arrow a {
+        font-size: 10px;
+    }
+
+    .swift-article {
+        height: 50px;
+    }
+
+    .swift-article > .description {
+        font-size: 12px;
+        padding-left: 10px;
+        line-height: 50px;
+    }
+
+    .swift-article > .link-arrow {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .gallery .gal-item .link-arrow {
+        height: 300px;
+        line-height: 300px;
+    }
+
+    .gallery .gal-item .link-arrow a {
+        font-size: 30px;
+    }
+
+    .content {
+        margin: 10px;
+    }
+
+    .article h2 {
+        padding-left: 5%;
+        font-size: 1em;
+    }
+
+    .article .content-block {
+        padding-left: 5%;
+    }
+
+    .article .content-block p {
+        font-size: 13px;
+        line-height: 25px;
+    }
+}
