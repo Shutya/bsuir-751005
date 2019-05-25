@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial,helvetica,sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+main {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+.btn{
+    background: 0 0;
+    border-color: rgb(230, 230, 230);
+    line-height: 1;
+    margin: 5px;
+    padding: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+    font-size: 12px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center
+}
+
+.more-btn {
+    width: 25%;
+}
+
+.content-sources {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;    
+    align-items: center;
+    width: 75%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* область по которой ползает ползунок*/
+.content-sources::-webkit-scrollbar-track{
+    border-radius: 8px;
+    background-color: white;
+    width: 75%;  
+    box-shadow: inset 0 0 6px rgba(83, 79, 79, 0.3); 
+}
+  
+.content-sources::-webkit-scrollbar{
+    width: 20px;
+    background-color: #7e7a7a;
+}
+  
+/* ползунок scrollbar'а*/
+.content-sources::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background-color: #F5F5F5;
+    width: 70px;
+}
+
+.content-news{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.news-template__item{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    color: #000000;
+    margin-bottom: 2%;
+}
+  
+.news__picture{
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 40%;
+}
+  
+.news__img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+  
+.news__content{
+    text-align: left;
+    width: 60%;
+}
+  
+.news__title{
+    font-size: 14px;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+    text-align: justify;
+    font-weight: bold;
+}
+  
+.news__source{
+    font-size: 12px;
+    color: #444444;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 0;
+    text-transform: uppercase;
+}
+  
+.news__text{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 0;
+    text-align: justify;
+}
+  
+.news__link{
+    outline: none;
+    font-size: 12px;
+    text-decoration: none;
+    color: #8f1515;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
