@@ -1,0 +1,157 @@
+body {
+	background: #ade2f7;
+   font-size: 14px;
+   margin: 0;
+   padding: 0;
+}
+
+.header {
+   background: #6abddd;
+   width: 100%;
+   height: 70px;
+}
+
+.footer {
+	padding-top: 25px;
+	margin-top: 50px;
+	height: 50px;
+	background: #6abddd;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+}
+
+.center {
+	font-size: 40px;
+	color: #2f65bc;
+	text-align: center;
+}
+
+.search{
+   display: inline-block;
+   margin-right: 35%;
+   float: right;
+   padding: 18px 0px;
+}
+
+.search__source {
+    height: 33px;
+    margin-right: 15px;
+    padding: 0px 15px;
+}
+
+
+
+.search__button  {
+    padding: 8px 20px;
+    background: #ffffff;
+    border: none;
+    font-size: 15px;
+}
+
+.search__input {
+   padding: 7px 20px;
+   margin-right: 15px;
+   margin-top: 2px;
+}
+
+.main {
+   padding-top: 50px;
+   width: 80%;
+   margin: 0 auto;
+   min-height: 10%;
+}
+
+.news__item {
+   height: 400px;
+}
+
+.news__item__card {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 400px;
+}
+.news__item__card img {
+    width: 100%;
+    height: 100%;
+}
+
+.news__item__card .news__item__caption {
+    position: absolute;
+    top: -100%;
+    left: 0px;
+    background: #6b98e0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: table;
+}
+.news__item__card div.news-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.news__item__card .news__item__caption h4 {
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.news__item__card .news__item__caption p {
+    margin: 15px 0px;
+    text-align: center;
+    font-style: italic;
+    padding: 0px 10px;
+}
+.news-icons {
+    text-align: center;
+}
+
+.icon-news {
+    color: #fff;
+    font-size: 32px;
+    padding: 5px;
+}
+
+.news__item {
+   background: #6b98e0;
+   padding: 5px;
+   position: relative;
+   margin: 20px 0;
+   overflow: hidden;
+}
+
+.news__source {
+    text-align: center;
+    padding: 7px 0;
+    top: 30px;
+    right: -35px;
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+.news__description h2 {
+   margin: 0;
+   border-bottom: 1px solid #fff;
+   font-size: 32px;
+}
+.news__description {
+   font-size: 20px;
+    padding: 15px 25px;
+    color: #fff;
+   width: calc(100% - 50px);
+}
+
+
+.next-news {
+	margin-left: 40%;
+    background: #6abddd;
+    padding: 15px 50px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
