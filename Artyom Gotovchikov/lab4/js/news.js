@@ -1,6 +1,6 @@
 "use strict"
 
-const API_KEY = "8c2a4b8a22e14e04889f9654938a8438"
+const API_KEY = "210e863f463040d6809881dd5c888696"
 const PAGES_COUNT = 8
 const PER_PAGE = 5
 const NO_PHOTO = 'http://www.fsxaddons.com/static/img/no-preview.jpg'
