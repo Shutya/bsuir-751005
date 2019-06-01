@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>News</title>
+</head>
+<body>
+    <main>
+        
+        <header class="top-menu">
+            <div>   
+                <p class="">News page</p>
+            </div>
+            <div>
+                <input type="text" name="search"  id="search-field" placeholder="Search..." class="form-control"/>
+                <input type="button" class="btn" name="btn-search" id="search-btn" value="Search">
+            </div>
+        </header> <hr>
+        <div class="title">
+            <h1>ACTUAL NEWS</h1>
+        </div> <hr>
+
+        <div class="content">
+
+            <div class="content-sources" id="resources">
+            </div>
+
+            <div class="content-news" id="news">
+            </div>
+
+            <h2 class="content-error" id="error-block" style="display: none;">There are no articles matching your request<p></p></h2>
+
+            <input type="button" class="more-btn btn" id="loadButton" value="Load more">
+
+        </div>
+
+    </main>
+
+    <template id="news-template">
+            <div class="news-template__item">
+                <div class="news-template__item news__picture">
+                    
+                </div>
+                <div class="news__content">
+                    <h2 class="news__title"></h2>
+                    <h3 class="news__source"></h3>
+                    <p class="news__text"></p>
+                    <a class="news__link" href="#">Read more...</a>
+                </div>
+            </div>
+        </template>
+
+    <script src="dest/main.js"></script>
+</body>
+</html>
