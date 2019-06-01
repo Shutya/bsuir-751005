@@ -1,0 +1,28 @@
+.main{
+    min-height: calc(100vh - 90px);
+}
+
+.btn_news {
+    background-color: #29db38;
+    border: 0;
+    padding: 10px 40px;
+    margin: 5px;
+    color: #FFF;
+    border: #F0F0F0 1px solid;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+.btn_fixed{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.btn_news:hover{
+    background-color: rgb(27, 27, 221);
+}
+
+.btn_news:focus {
+    outline:none;
+}
