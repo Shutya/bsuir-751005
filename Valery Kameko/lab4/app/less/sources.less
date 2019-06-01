@@ -1,0 +1,33 @@
+@import "colors.less";
+
+.sources-section {
+    width: 100%;
+}
+
+.sources__container {
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+}
+
+.source {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: @color-secondary-1-0;
+    border: 2px solid @color-secondary-1-1;
+    color: @color-secondary-1-1;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.source:hover:hover {
+    cursor: pointer;
+    
+}
+
+.source.enabled {
+    background-color: @color-secondary-1-1;
+    border: 2px solid @color-secondary-1-0;
+    color: @color-secondary-1-0;
+}

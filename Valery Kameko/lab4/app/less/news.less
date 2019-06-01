@@ -1,0 +1,31 @@
+@import "colors.less";
+@import "news-item.less";
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news__load-more {
+    background-color: @rgba-secondary-2-0;
+    color: @rgba-secondary-2-2;
+    font-weight: bold;
+    font-size: 12pt;
+    width: 200px;
+    height: 50px;
+    margin: 50px;
+}
+
+.news__load-more:hover {
+    background-color: @rgba-secondary-2-4;
+    color: @rgba-secondary-2-3;
+}
+
+.news__not-found {
+    color: @color-secondary-1-1;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 10px;
+    margin-top: 100px;
+}
