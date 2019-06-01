@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Cool NEWS">
+        <meta name="keywords" content="News">
+        <meta name="author" content="Hitov_Constantin_751005">
+        <title>Main Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="MainBody">
+        <header>
+            <div class="container">
+                <div class="branding">
+                    <a href="index.html"><h1> BeeeeeeeerkNews </h1></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <select name="searchSource" id="searchSource">
+                                <option value="null" selected></option>
+                            </select>
+                			      <input type="text" class="input-find" id="searchInput" placeholder="Search...">
+                			      <button type="submit" class="button-find" id="searchButton">Search</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="flex-container" id="newsContainer">
+        </div>
+        <button type="button" class="button-more" id="morenewsButton">More...</button>
+        <footer>
+            <a>News represented by NEWSAPI.ORG</a>
+            <br>
+            <a>BeeeeeeeerkNews, Copyright &copy; 2019</a>
+        </footer>
+        <script type="text/javascript" src="news.js"></script>
+    </body>
+</html>
