@@ -1,0 +1,115 @@
+.searchbox__content .searchbox__icon--little{
+    display: block;
+}
+
+.navigation .navigation__label{
+    display: block;
+}
+
+.navigation .navigation__menu{
+    display: none;
+}
+
+.navigation .navigation__label{
+    float: left;
+    font-size: 12px;
+    font-weight: lighter;
+    padding: 10px;
+}
+
+.navigation .smallmenu--open .smallmenu__icon--small{
+    display: block;
+    padding: 10px;
+}
+
+.navigation .smallmenu--open{
+    display: block;
+}
+
+.navigation{
+    height: 36px;
+}
+
+
+.searchbox{
+    height: 60px;
+}
+
+.searchbox .searchbox__leftside{
+    width: 75%;
+    height: 100%;
+    font-size: 12px;
+}
+
+.searchbox .searchbox__content{
+    width: 25%;
+    height: 100%;
+}
+
+.searchbox .searchbox__content:hover{
+    width: 25%;
+    height: 100%;
+}
+
+.searchbox .searchbox__content .searchbox__icon{
+    top: 25px;
+}
+
+.banner{
+    height: 200px;
+}
+
+.banner__link,
+.banner__icon{
+    padding-top: 20px;
+    font-size: 10px;
+}
+
+.banner .banner__text{
+    font-size: 20px;
+}
+
+.banner__link{
+    top: 60px;
+    font-size: 10px;
+    width: 80%;
+}
+
+.banner__content{
+    left: 10%;
+    top: 12%;
+}
+
+.gallery{
+    width: 100%;
+}
+
+.gallery__image{
+    width: 100%;
+}
+
+
+.info{
+    min-height: 600px;
+    padding: 4%;
+}
+
+.info .info__header{
+    width: 100%;
+}
+
+.info .info__secondParagraph{
+    display: none;
+}
+
+
+.info__paragraph .paragraph__text{
+    font-size: 12px;
+    padding: 3.5%;
+}
+
+.info .info__header{
+    padding-left: 3.5%; 
+    padding-bottom: 2%;
+    font-size: 20px;
+}

@@ -1,0 +1,104 @@
+
+.searchbox__content .searchbox__icon--big{
+    display: block;
+}
+
+.navigation .navigation__menu{
+    display: block;
+}
+
+.navigation .navigation__menu{
+    font-size: 15px;
+}
+
+
+.navigationmenu__reference{
+    padding: 15px;
+}
+
+.navigationmenu__reference:hover{
+    padding: 20px;
+}
+
+.searchbox{
+    height: 200px;
+}
+
+.searchbox .searchbox__leftside{
+    width: 75%;
+    height: 100%;
+    font-size: 30px;
+}
+
+.searchbox .searchbox__content{
+    width: 25%;
+    height: 100%;
+}
+
+.searchbox .searchbox__content:hover{
+    width: 25%;
+    height: 100%;
+}
+
+.searchbox .searchbox__content .searchbox__icon{
+    top: 80px;
+}
+
+.banner{
+    height: 800px;
+}
+
+.banner .banner__text{
+    font-size: 60px;
+}
+
+.banner__link{
+    top: 60px;
+    font-size: 25px;
+    width: 80%;
+}
+
+.banner__content{
+    left: 10%;
+    top: 40%;
+}
+
+.banner__link,
+.banner__icon{
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+.gallery__image{
+    width: 33.33333%;
+}
+
+
+.info{
+    min-height: 700px;
+    padding: 4%;
+}
+
+.info .info__paragraph{
+    width: 30%;
+}
+
+.info .info__firstparagraph{
+    left:10%;  
+}
+
+.info .info__secondParagraph{
+    left: 50%;   
+}
+
+
+.info__paragraph .paragraph__text{
+    font-size: 16px;
+    padding: 3.5%;
+}
+
+.info .info__header{
+    padding-left: 7.5%; 
+    padding-bottom: 2%;
+    font-size: 40px;
+}

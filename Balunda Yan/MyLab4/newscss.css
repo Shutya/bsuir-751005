@@ -1,0 +1,37 @@
+body{
+    background-color: lavenderblush;
+}
+
+img{
+    width: 700px;
+   height: 350px;
+}
+
+.article{
+    padding: 20px;
+    display: inline-block;
+    width: 700px;
+
+}
+
+.article-title{
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+.article-description{
+    border: 4px double black;
+text-align: center;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+}
+.more {
+   position: absolute;
+    margin-left: 44%;
+
+}
+right: 10px;
+}
