@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+  </head>
+  <body>
+    <header >
+      <h1 class="header__label">News</h1>
+    </header>
+    <main>
+      <div class="main__sources" id="main-sources" >
+      </div>
+
+      <div class="main__search">
+          <input class="main__search__input" id="main-search-input" placeholder="Search filter" type="search">
+          <button class="main__search__bn" id="main-search-bn">Search</button>
+      </div>
+
+      <div class="main__newsContent" id ="main-newsContent">
+      </div>
+
+      <img id="main-img">
+
+      <div style="text-align: center;">
+          <h4 class="main__errorLabel" id="main-errorLabel" style="display: none">No results.</h4>
+      </div>
+      <button class="main__load-bn" id="main-load-bn" style="display: none">Load more</button>
+
+    </main>
+  </body>
+</html>
