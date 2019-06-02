@@ -1,0 +1,154 @@
+/*02f5fb5b27fd467cb014b23a2d18c566*/
+body {
+    height: 100%;
+    font-family: raleway;
+    background-color: #AAD8F9;
+}
+.header__title__image
+{
+	width: 4vw;
+}
+.header__title
+{
+    font-size: 5vw;
+    margin:  0;
+    color: rgb(21, 21, 92);
+}
+
+.header__list li
+{
+    display: inline-block;
+    margin: 2px;
+    border: 2px solid rgb(21, 21, 92);
+    border-radius: 10px;
+    padding: 0.1em;
+    padding-top: 0.4em;
+    padding-bottom: 0.5em;
+    background-color: #2B2A7E;
+    color: white;
+}  
+.header__list li a 
+{
+    text-decoration: none;
+    color: black;
+    font-size: 2.5vw;
+}
+
+.header__list li:hover
+{
+    transform: scale(1.05,1.2);
+    border-width: 2px;
+    border-color: #E4258A;
+    color: #E4258A;
+}
+#news img
+{
+    float:left;
+    width:50%;
+    border-radius: 20px;
+    margin: 5px 15px;
+}
+
+
+#new img : hover {
+    width:60%;
+}
+#news{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+#news li
+{
+    float: left;
+    list-style-type: none;
+}
+#news a
+{
+    text-decoration: none;
+    color: #E4258A;
+    font-weight: bold;font-size: 1.2em;
+}  
+
+#news a:hover
+{
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-style: dashed;
+}
+body {
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+footer {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button{
+    
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    width: 35%;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFF;
+    background: rgb(21, 21, 92);
+    border-right: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+    margin-left: 35%;
+    border-radius: 15px;
+    list-style-type: none;
+    padding: 0;
+    
+}
+.button:hover {
+    color: black;
+    background: #D52099;
+}
+#header__searth-btn{
+    overflow: hidden;
+    text-decoration: none;
+    color: #2B2A7E;
+    background-color: #E4258A;
+    margin: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+#header__searth-btn:hover {
+    color: orange;
+}
+#header__searth-text{
+
+    width: 25%;
+    font-size: 1.5em;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #2B2A7E;
+}
+h6{
+    margin: 0;
+}
+
+@media screen and (max-width: 640px) {
+    #news img
+    {
+        float: none;;
+        width: 90%;
+    }
+    .header__list li
+    {
+        padding-top: 0;
+        padding-bottom: 0.2em;
+    } 
+}
+
