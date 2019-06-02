@@ -1,0 +1,84 @@
+/*----------------------------nav------------*/
+nav span{
+    font-size: 20px;
+}
+
+nav ul li{
+    height: 50px;
+}
+
+nav{
+    height: 70px;
+}
+
+nav ul{
+    top: 60px;
+    width: 180px;
+}
+
+.menu-wrapper{
+    width: 60px;
+}
+
+nav .menu-wrapper .burger{
+    font-size: 26px;
+    display: flex;
+}
+
+/*---------------------banner----------------*/
+
+
+.banner .ref{
+    height: 400px;
+}
+
+.banner .info{
+    font-size: 25px;
+}
+
+.banner .link,
+.banner .angle{
+    font-size: 15px;
+}
+
+/*---------------------text----------------*/
+
+.text{
+    height: 150px;
+}
+
+.text>.wrapper p{
+    font-size: 20px;
+}
+
+.text .link{
+    font-size: 35px;
+}
+
+/*---------------------imgs----------------*/
+
+.imgs>.link{
+    font-size: 55px;
+    height: 350px;
+    height: -webkit-fill-available;
+}
+
+.imgs{
+    display: block;
+}
+
+.imgs>.img-wrap,
+.imgs>.link{
+    width: 100%;
+}
+
+/*---------------------main----------------*/
+
+main article{
+    font-size: 14px;
+    width: 100%;
+}
+
+main .link{
+    font-size: 20px;
+}
