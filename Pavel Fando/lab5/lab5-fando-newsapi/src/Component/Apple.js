@@ -6,6 +6,7 @@ class Apple extends Component {
         super(props);
 
         this.state = {
+            num: 0,
             articles: [],
         };
     }
@@ -19,6 +20,10 @@ class Apple extends Component {
             .then(response => response.json())
             .then(data => this.setState({articles: data.articles}));
 
+    }
+
+    showMore() {
+        this.props.num += 5
     }
 
     render() {
@@ -39,7 +44,7 @@ class Apple extends Component {
                         </ul>
                     </div>
                 </nav>
-                {articles.map(article =>
+                {articles.for(article =>
                     <div class="card middle">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src={article.urlToImage}/>
@@ -56,6 +61,7 @@ class Apple extends Component {
                     </div>
                 )
                 }
+                <button class="waves-effect waves-light btn-small red lighten-4 z-depth-2">Show more</button>
             </div>
         )
     }
