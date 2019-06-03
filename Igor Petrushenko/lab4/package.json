@@ -1,0 +1,26 @@
+{
+  "name": "news-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "npm run build && npm run open",
+    "open": "start ./index.html"
+  },
+  "author": "forigy",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "path": "^0.12.7",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}
