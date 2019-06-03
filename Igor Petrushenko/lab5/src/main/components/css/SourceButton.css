@@ -1,0 +1,16 @@
+
+.btn{
+    border-color: #6e6767;
+    color: #6e6767;
+    background: 0 0;
+    border: 0px;
+    line-height: 1;
+    margin: 5px;
+    padding: 8px;
+    color: #000000;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+    font-size: 12px;
+}
+  

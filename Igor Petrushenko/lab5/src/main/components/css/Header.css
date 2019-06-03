@@ -1,0 +1,39 @@
+.top-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 25%;
+}
+
+.top-menu div{
+    font-size: 12px;
+}
+
+.bottom-line{
+    height: 1px;
+    width: 50%;
+    padding-top: 1px;
+    margin-left: 25%;
+    background-color: #6e6767; 
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.subtitle h2{
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 14px;
+}

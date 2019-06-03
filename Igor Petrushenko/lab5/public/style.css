@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: arial,helvetica,sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title h1{
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.more-btn{
+    font-size: 12px;  
+    width: 12%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.main{
+    text-align: center;
+}
+
+.content-news{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.content-error{
+    font-size: 18px;
+    font-weight: 100;
+    color: #444444;
+    text-align: center;
+}
+
+.content-sources{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 50px;
+    overflow: auto;
+    align-items: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 1%;
+}
+  
+/* область по которой ползает ползунок*/
+.content-sources::-webkit-scrollbar-track{
+    border-radius: 8px;
+    background-color: white;
+    width: 75%;  
+    box-shadow: inset 0 0 6px rgba(83, 79, 79, 0.3); 
+}
+  
+.content-sources::-webkit-scrollbar{
+    width: 20px;
+    background-color: #7e7a7a;
+}
+  
+/* ползунок scrollbar'а*/
+.content-sources::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background-color: #F5F5F5;
+    width: 70px;
+}
+
+
+  
+
+
+
