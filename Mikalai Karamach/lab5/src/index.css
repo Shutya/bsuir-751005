@@ -1,0 +1,147 @@
+body {
+    color: #464547;
+    background-color: #FFFFFF;
+    font-family: 'Audiowide', 'Source Sans Pro', fantasy;
+    box-sizing: border-box;
+}
+
+/*  */
+.search {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    padding: 10px 0px 0px 10px;
+}
+
+.searchInput {
+    width: 90%;
+    border-width: 3px;
+    border-right: 0;
+    border-style: solid;
+    border-color: #A3C644;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.searchBtn {
+    width: 100px;
+    background-color: #A3C644;
+    border: none;
+}
+
+.searchBtn:active {
+    background-color: #39C2D7;
+}
+
+.searchBtn, .searchInput {
+    color: black;
+    font-size: 19px;
+    outline: none;
+}
+
+/*  */
+.sources {
+    width: 100%;
+    display: flex;
+    height: 70px;
+    overflow: auto;
+    align-items: center;
+}
+
+.sourceBtn {
+    height: 30px;
+    background: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #A3C644;
+    color: #464547;
+    background: #A3C644;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/*  */
+.allNews {
+    margin: 10px 0px 15px 100px;
+}
+
+.news {
+    max-width: 1020px;
+    display: flex;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(166, 166, 166, 0.82);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(166, 166, 166, 0.82);
+    box-shadow: 5px 5px 5px 0px rgba(166, 166, 166, 0.82);
+    box-sizing: border-box;
+    margin: 0px 0px 30px 0px;
+}
+
+.newsPicture {
+    min-width: 300px;
+    min-height: 100px;
+    background-size: cover;
+}
+
+.newsContent {
+    padding: 10px;
+}
+
+.newsLink {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.newsHeadline {
+    margin: 0;
+}
+
+.newsSource {
+    display: block;
+    color: #39C2D7;
+    margin-bottom: 40px;
+}
+
+.newsDescription {
+    display: block;
+    color: #333;
+    line-height: 1.4;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+/*  */
+.moreNews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moreNewsBtn {
+    font-size: 55px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #39C2D7;
+}
+
+.moreNewsBtn:active {
+    color: #39C2D7;
+}
+
+.moreNewsBtn:hover {
+    cursor: pointer;
+}
+
+/*  */
+.poweredBy {
+    font-size: 20px;
+    text-align: center;
+}
+
+.poweredBy a {
+    text-decoration: none;
+    color: #39C2D7;
+}
