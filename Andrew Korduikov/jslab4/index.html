@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Cars testdrives">
+        <meta name="keywords" content="news">
+        <meta name="author" content="Yermolovich">
+        <title>News | Главная</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="branding">
+                    <a href="index.html"><h1>News</h1></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <select name="searchSource" id="searchSource">
+                                <option value="none" selected>Все издания</option>
+                            </select>
+                			<input type="text" id="searchInput" class="input-find" placeholder="Поиск...">
+                			<button type="submit" class="button-find" id="searchButton">Найти</button>
+                        </li>	
+                    </ul>
+                </nav>
+            </div>          
+        </header>
+        <div class="flex-container" id="NewsContainer">
+        </div>
+        <button id="more_news" type="button" name="more_news">Load more news</button>
+        <footer>
+            <a>BestNews, Copyright &copy; 2019</a>
+        </footer>
+        <script type="text/javascript" src="js/news.js"></script>
+    </body>
+</html>
