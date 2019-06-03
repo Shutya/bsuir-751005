@@ -44,7 +44,7 @@ class Apple extends Component {
                         </ul>
                     </div>
                 </nav>
-                {articles.for(article =>
+                {articles.map(article =>
                     <div class="card middle">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src={article.urlToImage}/>
