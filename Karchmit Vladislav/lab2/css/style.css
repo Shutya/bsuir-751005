@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+body {
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+.content {
+
+}
+
+.header {
+   background: #373c3f;
+   height: 100px;
+}
+
+
+.main-menu {
+   padding-left: 50px;
+   height: 100%;
+   display: table;
+}
+
+.main-menu ul{
+   padding: 0;
+   margin: 0;
+   display: table-cell;
+   vertical-align: middle;
+}
+
+.main-menu ul li {
+   margin-right: 30px;
+   list-style: none;
+   display: inline-block;
+}
+
+.main-menu a {
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+
+.banner img, .text-box img {
+   width: 100%;
+}
+
+.images-grid img {
+   width: 33%;
+}
+
+.content .title {
+   color: #088ca5;
+   font-size: 30px;
+}
+.content {
+   background: #ebebeb;
+   margin-top: -25px;
+   margin-bottom: -25px;
+}
+.content__wrapper {
+   width: 80%;
+   margin: 0 auto;
+   padding: 60px 0px;
+}
+
+.content .col1 {
+   width: 45%;
+   display: inline-block;
+}
+.content .col2 {
+   width: 50%;
+   float: right;
+}
+#mobile-menu {
+   display: none;
+}
+#mobile-menu span {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    margin: 15px 30px;
+}
+
+@media(max-width: 640px) {
+   #mobile-menu {
+      display: block;
+   }
+   .hamburger {
+      color: #fff;
+      background: #202529;
+      font-size: 20px;
+      padding: 20px;
+      position: absolute;
+      right: 0;
+      top:0;
+   }
+   .header {
+       height: 60px;
+   }
+   .images-grid img {
+      width: 100%;
+   }
+   .content .col1, .content .col2 {
+      display: block;
+      float: none;
+      width: 100%;
+   }
+
+
+
+   .main-menu {
+      display: none;
+      top: 60px;
+   	width: 100%;
+      padding: 0;
+   	background-color: #5b0fa1;
+   	position: absolute;
+   }
+   .main-menu ul {
+      width: 100vw;
+      display: table-cell;
+      vertical-align: middle;
+   }
+   .main-menu ul li {
+      display: block;
+      text-align: center;
+      font-size: 24px;
+      padding: 10px;
+   }
+   .main-menu > a {
+       display: block;
+       padding: 5px;
+       margin: 15px 0 0px 20px;
+       color: #494949;
+       text-transform: uppercase;
+   }
+   .content__wrapper {
+      width: 90%;
+   }
+
+}
+
+@media(min-width: 640px) {
+   .main-menu {
+      display: table !important;
+   }
+}
