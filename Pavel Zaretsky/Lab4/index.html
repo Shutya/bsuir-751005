@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="./index.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>News</title>
+</head>
+
+<body>
+	<header>
+		<input class="query-text" type="text">
+		<button class="query-button">Find by query</button>
+	</header>
+	
+	<div class = "news-position">
+		<div class="news-block-src">
+			<button class="news-block__src__show__all">
+				<h2>Show All</h2>
+			</button>
+			<div class="news-block__src__concrete">
+
+			</div>
+		</div>
+	</div>
+	
+	<div class = "news-position">
+		<div class="news-block">
+			<div class="news-block-list">
+
+			</div>
+			<p class="news-block-not-found">There are no articles</p>
+			<button class="load-more-button" id="load-more">Load more...</button>
+		</div>
+	</div>
+	
+	<footer>
+		<p><a href="https://NewsAPI.org">Powered by NewsAPI.org</a></p>
+	</footer>
+
+	<template id="src__tmpl">
+		<button class="src__tmpl__button">
+			<h2 class="src__tmpl__name"></h2>
+			<p class="src__tmpl__id"></p>
+		</button>
+	</template>
+
+	<template id="news__tmpl">
+		<a class="news__tmpl__ref">
+			<img class="news__tmpl__img">
+			<h3 class="news__tmpl__title">Title</h3>
+			<p class="news__tmpl__description">Description</p>
+
+		</a>
+	</template>
+
+	<script src="index.js"></script>
+</body>
+
+</html>
