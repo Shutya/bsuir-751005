@@ -1,0 +1,103 @@
+.SearchBoxContent .Search5xIcon{
+    display: block;
+}
+
+.navigation #menu{
+    display: block;
+}
+
+.navigation #menu{
+    font-size: 22px;
+}
+
+.navigation #menu li a{
+    padding: 25px;
+}
+
+.navigation #menu li a:hover{
+    padding: 25px;
+}
+
+.SearchBox{
+    height: 250px;
+}
+
+.SearchBox input[type="text"]{
+    width: 75%;
+    height: 100%;
+    font-size: 36px;
+}
+
+.SearchBox .SearchBoxContent{
+    width: 25%;
+    height: 100%;
+}
+
+.SearchBox .SearchBoxContent:hover{
+    width: 25%;
+    height: 100%;
+}
+
+.SearchBox .SearchBoxContent > i{
+    top: 80px;
+}
+
+.Banner{
+    height: 800px;
+}
+
+.Banner .BannerText{
+    font-size: 60px;
+}
+
+.BannerLink{
+    top: 60px;
+    font-size: 25px;
+    width: 80%;
+}
+
+.BannerContent{
+    left: 20%;
+    top: 50%;
+}
+
+.BannerLink,
+.BannerIcon{
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+
+.GalleryImage{
+    width: 33.33333%;
+}
+
+
+.Info{
+    min-height: 850px;
+    padding: 4%;
+}
+
+.Info > div{
+    width: 40%;
+}
+
+.Info .FirstParagraph{
+    left: 10%;  
+}
+
+.Info .SecondParagraph{
+    left: 50%;   
+}
+
+
+.Info > div > article{
+    font-size: 26px;
+    padding: 3.5%;
+}
+
+.Info h2{
+    padding-left: 7.5%; 
+    padding-bottom: 2%;
+    font-size: 60px;
+}

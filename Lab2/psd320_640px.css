@@ -1,0 +1,110 @@
+.SearchBoxContent .Search2xIcon{
+    display: block;
+}
+
+.navigation .OpenMenu{
+    display: block;
+}
+
+.navigation #NavLabel{
+    display: block;
+    padding: 15px;
+}
+
+.navigation .OpenMenu .OpenMenu2xIcon{
+    display: block;
+    padding: 10px;
+}
+
+.navigation #menu{
+    display: none;
+}
+
+
+.navigation{
+    height: 52px;
+}
+
+.SearchBox{
+    height: 100px;
+}
+
+.SearchBox input[type="text"]{
+    width: 75%;
+    height: 100%;
+    font-size: 15px;
+}
+
+.SearchBox .SearchBoxContent{
+    width: 25%;
+    height: 100%;
+}
+
+.SearchBox .SearchBoxContent:hover{
+    width: 25%;
+    height: 100%;
+}
+
+.SearchBox .SearchBoxContent > i{
+    top: 35px;
+}
+
+.Banner{
+    background-color: #13adc1;
+    height: 400px;
+}
+
+.BannerLink,
+.BannerIcon{
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+.Banner .BannerText{
+    font-size: 30px;
+}
+
+.BannerLink{
+    top: 60px;
+    font-size: 20px;
+    width: 80%;
+}
+
+.BannerContent{
+    left: 10%;
+    top: 15%;
+}
+
+.Gallery{
+    width: 100%;
+}
+
+.GalleryImage{
+    width: 100%;
+}
+
+
+.Info{
+    min-height: 600px;
+    padding: 4%;
+}
+
+.Info > div{
+    width: 100%;
+}
+
+.Info .SecondParagraph{
+    display: none;
+}
+
+
+.Info > div > article{
+    font-size: 15px;
+    padding: 3.5%;
+}
+
+.Info h2{
+    padding-left: 3.5%; 
+    padding-bottom: 2%;
+    font-size: 25px;
+}
