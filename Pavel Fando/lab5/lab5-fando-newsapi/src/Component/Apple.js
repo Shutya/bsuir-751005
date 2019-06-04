@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import App from "../App.js";
+import * as ReactDOM from "react-dom";
 
 class Apple extends Component {
     constructor(props) {
@@ -21,13 +22,16 @@ class Apple extends Component {
             .then(data => this.setState({articles: data.articles}));
 
     }
-
-    showMore() {
-        this.props.num += 5
+     showMore() {
+        this.state.num += 5;
     }
 
     render() {
-        const {articles} = this.state;
+        let articlesTemp = this.state.articles;
+        let articles = articlesTemp.slice(this.state.num, this.state.num+5);
+        let newsNum = this.state.num;
+        console.log(this.state.num);
+        // <App/>??
         return (
             <div>
                 <nav className="red lighten-4">
@@ -39,29 +43,29 @@ class Apple extends Component {
                             <li><a onClick={App.showHealthNews} href="#root">Health</a></li>
                             <li><a onClick={App.showScienceNews} href="#root">Science</a></li>
                             <li><a onClick={App.showEntertainmentNews} href="#root">Entertainment</a></li>
-                            <li className="input-field">
-                            </li>
                         </ul>
                     </div>
                 </nav>
                 {articles.map(article =>
-                    <div class="card middle">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src={article.urlToImage}/>
+                    <div key={article.author} className="card middle">
+                        <div className="card-image waves-effect waves-block waves-light">
+                            <img className="activator" src={article.urlToImage}/>
                         </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">{article.author}</span>
+                        <div className="card-content">
+                            <span className="card-title activator grey-text text-darken-4">{article.author}</span>
                             <p><a href={"articles[0].url"}>link</a></p>
                         </div>
-                        <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i
-                            class="material-icons right">close</i></span>
+                        <div className="card-reveal">
+                        <span className="card-title grey-text text-darken-4"><i
+                            className="material-icons right">close</i></span>
                             <p>{article.content}</p>
                         </div>
                     </div>
+
                 )
+
                 }
-                <button class="waves-effect waves-light btn-small red lighten-4 z-depth-2">Show more</button>
+                <button className="waves-effect waves-light btn-small red lighten-4 z-depth-2" onClick={this.showMore.bind(this)}>Show more</button>
             </div>
         )
     }
