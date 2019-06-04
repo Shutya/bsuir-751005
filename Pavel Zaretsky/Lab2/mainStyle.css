@@ -1,0 +1,203 @@
+body{
+    max-height: 1800px;
+    color:white;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Myriad Pro', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a:link {
+    color: white;
+}
+  
+a:visited {
+    color: white;
+}
+  
+a:hover {
+    color: white;
+}
+  
+a:active {
+    color: white;
+  }
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.OpenMenu > i{
+    display: none;
+}
+
+.SearchBoxContent > i{
+    display: none;
+}
+
+.navigation #menu{
+    display: none;
+}
+
+
+.navigation #NavLabel{
+    display: none;
+}
+
+.navigation .OpenMenu {
+    display: none;
+}
+
+.navigation{
+    background-color: #373c3f;
+}
+
+.navigation #menu{
+    display: block;
+}
+
+.navigation #menu{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navigation #menu li{
+    float:left;
+}
+
+.navigation #menu li a{
+    transition: all 0.3s ease 0s;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation #menu li a:hover{
+    transition: all 0.3s ease 0s;
+    display: block;
+    background-color: #555c61;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation .OpenMenu{
+    transition: all 0.3s ease 0s;
+    float: right;
+    background-color: #16181a;
+}
+
+.navigation .OpenMenu:hover{
+    transition: all 0.3s ease 0s;
+    background-color: #373c3f;
+}
+
+.navigation #NavLabel{
+    float: left;
+}
+
+.SearchBox{
+    height: 250px;
+}
+
+.SearchBox input[type="text"]{
+    float: left;
+    color:#9585a4;
+    background-color: #27212c;
+    border:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-align: center;
+}
+
+.SearchBox .SearchBoxContent{
+    transition: all 0.3s ease 0s;
+    float: left;
+    color:white;
+    background-color: #bc3183;
+    text-align: center;
+}
+
+.SearchBox .SearchBoxContent:hover{
+    transition: all 0.3s ease 0s;
+    float: left;
+    color:white;
+    background-color: #4e1135;
+    text-align: center;
+}
+
+.SearchBox .SearchBoxContent > i{
+    position:relative;
+}
+
+.Banner{
+    background-color: #13adc1;
+}
+
+.Banner .BannerText{
+    display: block;
+    color:white;
+}
+
+.BannerLink{
+    display: block;
+    font-weight: lighter;
+}
+
+.BannerContent{
+    position: absolute;
+    display: block;
+    word-wrap: break-word;
+}
+
+.BannerLink,
+.BannerIcon{
+    float: left;
+}
+
+.Gallery{
+    width: 100%;
+}
+
+.Gallery::after{
+  content: "";
+  clear: both;
+  display: table;  
+}
+
+.GalleryImage{
+    float:left;
+    display: block;
+}
+
+
+.Info{
+    color:black;
+    background-color: #ebebeb;
+}
+
+.Info > div{
+    float: left;
+    position: absolute; 
+}
+
+
+.Info > div > article{
+    overflow-wrap: break-word;
+}
+
+.Info h2{
+    padding-left: 7.5%; 
+    padding-bottom: 2%;
+    font-size: 60px;
+}
+
+
+.Info h2{
+    font-weight: lighter;
+    color:#439cb0;
+}
