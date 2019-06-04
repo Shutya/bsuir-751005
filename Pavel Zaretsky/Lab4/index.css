@@ -1,0 +1,148 @@
+body {
+	background-color: rgb(125, 2, 10);
+}
+
+body > div {
+	padding: 15px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.news-position {
+	display: flex;
+	justify-content: center;
+}
+
+.news-block-src {
+	width: 90%;
+}
+
+.news-block-src .news-block__src__concrete {
+	display: flex;
+}
+
+
+.news-block {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 90%;
+}
+
+.news__tmpl__ref {}
+
+.news-block__src__show__all,
+.src__tmpl__button {
+	width: 100%;
+	background-color: rgb(120, 2, 50);
+	color: antiquewhite;
+	border: 2px solid white;
+}
+
+.news-block__src__show__all:first-child {
+	border-top-left-radius: 50px; 
+	border-top-right-radius: 50px; 
+}
+
+.src__tmpl__button:first-child {
+	border-bottom-left-radius: 50px;
+}
+
+.src__tmpl__button:last-child {
+	border-bottom-right-radius: 50px;
+}
+
+.news-block__src__show__all:hover,
+.src__tmpl__button:hover {
+	background-color: brown;
+	color: white;
+}
+
+.news-block-not-found {
+	color: red;
+	display: none;
+}
+
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+footer a {
+	border: 1px solid white;
+	padding: 5px;
+	color: white;
+	text-decoration: none;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 10px 5px;
+}
+
+.query-button {
+	background-color: rgb(120, 2, 50);
+	border: 0px;
+	color: white;
+	font-size: 20px;
+	padding: 5px;
+}
+
+.query-button:hover {
+	background-color: brown;
+}
+
+.query-text {
+	border: none;
+	font-size: 20px;
+	padding: 5px;
+	width: 50%;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+.load-more-button {
+	color: white;
+	width: 30%;
+	background-color: rgb(120, 2, 50);
+	border: 0px;
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 20px;
+}
+
+.load-more-button:hover {
+	background-color: brown;
+}
+
+.news-block-list {
+	width: 100%;
+}
+
+.news-block-list > p {
+	width: 100%;
+}
+
+.news-block-list a {
+	width: 100%;
+}
+
+.news-block-list img {
+	width: 100%;
+}
+
+.news__tmpl__ref {
+	text-decoration: none;
+	color: white;
+}
+
+@media all and (max-width: 625px) {
+
+	.news__tmpl__description {
+		display: none;
+	}
+
+}
