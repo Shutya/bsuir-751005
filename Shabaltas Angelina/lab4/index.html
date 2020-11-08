@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HotNews</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>        
+        <h2 class="header__title"><img src="./picture/logo.png" class="header__title__image">Last News</h2>
+        <hr color="paleturquoise">
+        <form class="searchForm">
+            <input type="text" id="header__searсh-text" >
+            <input type="button" id="header__searсh-btn" value="Search" >
+        </form>
+        <hr color="paleturquoise">
+        <ul class="header__list">
+            <li id="header__list__btn0"></li>
+            <li id="header__list__btn1"></li>
+            <li id="header__list__btn2"></li>
+            <li id="header__list__btn3"></li>
+            <li id="header__list__btn4"></li>
+            <li id="header__list__btn5"></li>
+        </ul>
+    </header>
+    <main>
+        <ul id="news"></ul>
+        <ul id="btn-load-more" class="button"></ul>
+    </main>
+    <footer>©Copyright <a href="https://newsapi.org">NewsAPI</a>, created by Angelina Shabaltas</footer>
+    <script src="dist/main.js"></script>
+</body>
+</html>
